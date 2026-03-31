@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="../Css/Site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="BackgroundContact">
+    <header>
+    <h1>Diamatti</h1>
+    <nav>
+        <ul class="Menu">
+             <li><a href="./Home.html">Home</a></li>
+             <li><a href="./Sobre.html">Sobre</a></li>
+             <li><a href="./Produtos.html">Produtos</a></li>
+             <li><a href="./Contatos.html">Contatos</a></li>
+        </ul>
+    </nav>
+    <a class="Entre" href="./Entre.html">Entre </a>
+    </header>
+        <section class="ContatosMain">
+            <form action="./Home.html">
+                <div class="NomeCont">
+                    <label for="nome">Nome *</label>
+                    <input type="text" name="nome" required>
+                </div>
+                <div class="EmailCont">
+                    <label for="email">E-Mail *</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="SelecioneCon" >
+                    <label for="opcao">Escolha uma opção</label>
+                    <select  name="select" style="width: 338px; margin-left: 5px;">
+                        <option value=""> </option>
+                        <option value="duvidas">Dúvidas</option>
+                        <option value="faleconosco">Fale Conosco</option>
+                        <option value="relatarproblema">Relatar Problema</option>
+                    </select>
+                </div>
+                <div class="DescrevaCont">
+                    <label for="descreva">Descreva: *</label>
+                    <textarea name="descreva" required></textarea>
+                </div>
+                <input type="submit" name="Enviar">
+            </form>
+        </section>
+
+    <footer class="FooterEntre">
+        <p>Redes sociais: <a href="https://www.instagram.com/kaua_afra/" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></p>
+        <p>Desenvolvido por Diamatti©</p>
+    </footer>
+</body>
+</html>
