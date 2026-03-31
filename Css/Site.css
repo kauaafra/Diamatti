@@ -1,9 +1,30 @@
-/* Home */
-body {
+/* Geral */
+
+form  {
+    margin: 40px auto;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    
+}
+
+html, body {
     margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
+
+/* Geral End */
+
+/* Home Start */
 
 header {
     background-color: black;
@@ -47,9 +68,9 @@ header h1 {
 .Entre:hover {
     color: #70d1f4;
 }
-/* home end */
+/* Home End */
 
-/* Menu entre */
+/* Menu Entre Start*/
 .MenuEntre {
     background-color: black;
     display: flex;
@@ -114,16 +135,77 @@ input[type="submit"] {
 
 .FooterEntre {
     background-color: black;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
+    margin-top: auto;
+    text-align: center;
     width: 100%;
 }
 
-.FooterEntre p {
-    font-size: 20px;
+.FooterEntre a {
     color: white;
+    text-decoration: none;
+}
+
+.FooterEntre a:hover {
+    color: #70d1f4;
+}
+
+.FooterEntre p {
+    font-size: 14px;
+    color: white;
+}
+/* Menu Entre End */
+
+/* Menu Contato Start */
+
+.BackgroundContact {
+    background-image: url(../Imagens/Background\ contato.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
     
 }
-/* menu entre end */
+
+.ContatosMain {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 350px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    color: white;
+    flex: 1;
+}
+
+
+
+.NomeCont {
+    padding: 10px;
+    margin-right:15px;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.EmailCont {
+    padding: 10px;
+    margin-right: 15px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.DescrevaCont {
+    text-align: center;
+    margin-right: 6px;
+}
+
+.SelecioneCon {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+textarea {
+    width: 330px;
+    height: 198px;
+    margin-left: 10px;
+}
+/* Menu Contato End */
