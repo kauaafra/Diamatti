@@ -1,0 +1,129 @@
+/* Home */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.Menu {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.Menu li {
+    margin: 15px;
+}
+
+.Menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.Menu a:hover {
+    color: #70d1f4;
+}
+
+.Entre {
+    margin: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.Entre:hover {
+    color: #70d1f4;
+}
+/* home end */
+
+/* Menu entre */
+.MenuEntre {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.MenuEntre h1 {
+    color: silver;
+}
+
+.Background {
+    background-image: url(../Imagens/relogio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.EntreMain {
+    display: flex;
+    justify-content: space-around;
+}
+
+.EntreMain form {
+    display: flex;
+    flex-direction: column;
+}
+
+.EntreMain section {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 350px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    color: white;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+input[type="date"] {
+    padding: 10px;
+}
+
+input[type="submit"] {
+    width: 50%;  
+    display: block;
+    margin: 20px auto;
+}
+
+
+.FooterEntre {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.FooterEntre p {
+    font-size: 20px;
+    color: white;
+    
+}
+/* menu entre end */

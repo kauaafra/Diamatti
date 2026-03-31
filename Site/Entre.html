@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Entre</title>
+    <link rel="stylesheet" href="../Css/Site.css">
+</head>
+<body class="Background">
+    <header class="MenuEntre">
+        <h1>Ficha de Cadastro</h1>
+    </header>
+    <main class="EntreMain">
+        <section>
+            <form action="./Home.html" method="post" target="_blank">
+                <div class="DivNome">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome">
+                </div>
+                <div>
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" minlength="11" maxlength="14">
+                </div>
+                <div>
+                    <label for="date">Data de nascimento</label>
+                    <input type="date" name="date" >
+                </div>
+                <div>
+                    <label for="email">E-Mail *</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div>
+                    <label for="senha">Senha *</label>
+                    <input type="password" name="senha" required minlength="8">
+                </div>
+                <input type="submit" value="Cadastrar">
+            </form>
+        </section>
+    </main>
+    <footer class="FooterEntre">
+        <p>Aurum©</p>
+    </footer>
+
+</body>
+</html>
