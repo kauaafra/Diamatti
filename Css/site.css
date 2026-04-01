@@ -280,3 +280,51 @@ textarea {
     transition: all 0.3s ease;
 }
 /* Menu Contato End */
+
+/* Menu Sobre Start */
+.BackgroundSobre {
+    background-image: url(../Imagens/Outro\ relogio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.MainSobre {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 90%;
+    max-width: 760px;
+    margin: 70px auto;
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+    color: #70d1f4;
+    flex: 1;
+    transition: 1s;
+    opacity: 0.5;
+}
+
+.MainSobre:hover {
+    opacity: 1;
+}
+
+.MainSobre h1 {
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #70d1f4;
+}
+
+.MainSobre p {
+    text-align: justify;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+
+
+
+/* Menu Sobre End */
