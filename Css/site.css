@@ -302,11 +302,13 @@ textarea {
     color: #70d1f4;
     flex: 1;
     transition: 1s;
-    opacity: 0.5;
+    opacity: 0.9;
+    transition: transform 0.5s ease;
 }
 
 .MainSobre:hover {
     opacity: 1;
+    transform: scale(1.2);
 }
 
 .MainSobre h1 {
