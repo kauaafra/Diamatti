@@ -309,6 +309,7 @@ textarea {
 .MainSobre:hover {
     opacity: 1;
     transform: scale(1.2);
+    box-shadow: 0 4px 15px rgb(85, 82, 82);
 }
 
 .MainSobre h1 {
