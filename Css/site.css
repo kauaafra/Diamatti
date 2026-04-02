@@ -46,6 +46,10 @@ body {
     }
 }
 
+input  {
+    color: black;
+}
+
 /* Geral End */
 
 /* Home Start */
@@ -106,7 +110,7 @@ header nav {
   height: 400px;
   background-size: cover;
   background-position: center;
-  animation: slideBanner 8s infinite;
+  animation: slideBanner 25s infinite;
 }
 
 @keyframes slideBanner {
@@ -369,7 +373,28 @@ textarea {
     margin-bottom: 18px;
 }
 
-
-
-
 /* Menu Sobre End */
+
+/* Aba Index Start*/
+
+.DestaquesDaSemana {
+    text-align: center;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4b4c4c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Aba Index End */
