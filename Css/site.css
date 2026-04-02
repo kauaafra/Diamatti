@@ -52,26 +52,36 @@ body {
 
 header {
     background-color: black;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
+    width: 100%;
 }
 
 header h1 {
     color: white;
     text-align: left;
-    margin-left: 20px;
+    margin: 0;
+    padding-left: 20px;
+    justify-self: start;
+    padding: 30px;
+}
+
+header nav {
+    justify-self: center;
 }
 
 .Menu {
     display: flex;
     list-style: none;
     gap: 15px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
 .Menu li {
     margin: 15px;
+    
 }
 
 .Menu a {
@@ -84,13 +94,47 @@ header h1 {
 }
 
 .Entre {
-    margin: 30px;
+    margin: 16px;
+    margin-right: 20px;
     color: white;
     text-decoration: none;
+    justify-self: end;
 }
+
+.Banner {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  animation: slideBanner 8s infinite;
+}
+
+@keyframes slideBanner {
+  0% {
+    background-image: url(../Imagens/Banner\ 1.png);
+  }
+  33% {
+    background-image: url(../Imagens/Banner\ 2.png);
+  }
+  66% {
+    background-image: url(../Imagens/Banner\ 3.png);
+  }
+  100% {
+    background-image: url(../Imagens/Banner\ 1.png);
+  }
+}
+
 
 .Entre:hover {
     color: #70d1f4;
+}
+
+.Banner img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    animation: moverBanner 20s linear infinite;
 }
 /* Home End */
 
@@ -165,8 +209,10 @@ input[type="button"] {
 
 .BotoesForm {
     display: flex;
+    justify-content: center;
     gap: 10px;
     margin-top: 10px;
+
 }
 
 .EntreMain input {
@@ -175,7 +221,7 @@ input[type="button"] {
 }
 
 .BotoesForm input {
-    width: 100%;
+    width: 50%;
     margin-bottom: 0;
     cursor: pointer;
 }
@@ -187,8 +233,7 @@ button {
 
 .BotoesForm input:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(112, 209, 244, 0.8);
-    transition: all 0.3s ease;
+    transition: 0.5s;
 }
 
 .FooterEntre {
@@ -215,7 +260,7 @@ button {
 
 /* Menu Contato Start */
 .BackgroundContact {
-    background-image: url(../Imagens/Background\ contato.png);
+    background-image: url(../Imagens/background\ preto.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -224,14 +269,19 @@ button {
 }
 
 .ContatosMain {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.445);
     width: 350px;
     margin:100px auto;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(122, 122, 122, 0.3);
+    color: rgb(255, 255, 255);
     flex: 1;
+}
+
+input, select {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.90);
 }
 
 .NomeCont {
@@ -245,7 +295,7 @@ button {
     padding: 10px;
     margin-right: 15px;
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 .DescrevaCont {
@@ -262,6 +312,8 @@ textarea {
     width: 330px;
     height: 198px;
     margin-left: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.90);
 }
 
 .EnviarButton {
@@ -276,8 +328,7 @@ textarea {
 
 .EnviarButton input:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(112, 209, 244, 0.8);
-    transition: all 0.3s ease;
+    transition: 0.5s;
 }
 /* Menu Contato End */
 
@@ -299,17 +350,8 @@ textarea {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 18px rgba(0,0,0,0.35);
-    color: #70d1f4;
+    color: aliceblue;
     flex: 1;
-    transition: 1s;
-    opacity: 0.9;
-    transition: transform 0.5s ease;
-}
-
-.MainSobre:hover {
-    opacity: 1;
-    transform: scale(1.2);
-    box-shadow: 0 4px 15px rgb(85, 82, 82);
 }
 
 .MainSobre h1 {
@@ -317,7 +359,7 @@ textarea {
     margin: 0 0 20px;
     font-size: 30px;
     letter-spacing: 1px;
-    color: #70d1f4;
+    color: aliceblue;
 }
 
 .MainSobre p {
