@@ -1,14 +1,10 @@
 /* Geral */
 
-form  {
-    margin: 40px auto;
-}
-
 footer {
     margin-top: 40px;
     padding: 20px 0;
-    
 }
+
 
 html, body {
     margin: 0;
@@ -19,7 +15,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .AnimacaoBotoes {
@@ -50,6 +45,11 @@ input  {
     color: black;
 }
 
+.Menu li:hover {
+    transform: scale(1.05);
+}
+
+
 /* Geral End */
 
 /* Home Start */
@@ -69,6 +69,8 @@ header h1 {
     padding-left: 20px;
     justify-self: start;
     padding: 30px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
 }
 
 header nav {
@@ -85,7 +87,6 @@ header nav {
 
 .Menu li {
     margin: 15px;
-    
 }
 
 .Menu a {
@@ -94,11 +95,11 @@ header nav {
 }
 
 .Menu a:hover {
-    color: #70d1f4;
+    color: #A6A6A6;
+    text-shadow: 0 0 5px #c9c7c7a2, 0 0 10px #c9c7c7a2, 0 0 20px #c9c7c7a2, 0 0 30px #c9c7c7a2;
 }
 
 .Entre {
-    margin: 16px;
     margin-right: 20px;
     color: white;
     text-decoration: none;
@@ -109,7 +110,7 @@ header nav {
   width: 100%;
   height: 400px;
   background-size: cover;
-  background-position: center;
+  background-position: right;
   animation: slideBanner 25s infinite;
 }
 
@@ -128,9 +129,9 @@ header nav {
   }
 }
 
-
 .Entre:hover {
-    color: #70d1f4;
+    color: #A6A6A6;
+    text-shadow: 0 0 5px #c9c7c7a2, 0 0 10px #c9c7c7a2, 0 0 20px #c9c7c7a2, 0 0 30px #c9c7c7a2;
 }
 
 .Banner img{
@@ -154,7 +155,7 @@ header nav {
 }
 
 .Background {
-    background-image: url(../Imagens/relogio.jpg);
+    background-image: url(../Imagens/Fundo\ Entrar.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -179,7 +180,7 @@ header nav {
 }
 
 .EntreMain section {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.950);
     width: 350px;
     margin: 50px auto;
     padding: 30px;
@@ -188,16 +189,20 @@ header nav {
     color: white;
 }
 
+.EntreMain img {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
 label {
     margin-bottom: 5px;
     font-weight: bold;
 }
 
 input {
-    padding: 10px;
-    margin-bottom: 20px;
     border: none;
-    border-radius: 5px;
     font-size: 16px;
     width: 100%;
 }
@@ -264,7 +269,7 @@ button {
 
 /* Menu Contato Start */
 .BackgroundContact {
-    background-image: url(../Imagens/background\ preto.png);
+    background-image: url(../Imagens/Fundo\ Contatos.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -273,7 +278,7 @@ button {
 }
 
 .ContatosMain {
-    background-color: rgba(0, 0, 0, 0.445);
+    background-color: rgba(0, 0, 0, 0.950);
     width: 350px;
     margin:100px auto;
     padding: 30px;
@@ -283,39 +288,47 @@ button {
     flex: 1;
 }
 
+.ContatosMain img {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
 input, select {
     border-radius: 20px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.90);
+    margin-right: 15px;
 }
 
 .NomeCont {
     padding: 10px;
     margin-right:15px;
-    text-align: center;
-    padding-bottom: 0;
+    text-align: left;
 }
 
 .EmailCont {
     padding: 10px;
     margin-right: 15px;
-    text-align: center;
-    padding-bottom: 15px;
+    text-align: left;
 }
 
 .DescrevaCont {
-    text-align: center;
-    margin-right: 7px;
+    padding: 10px;
+    text-align: left;
+    margin-right: 15px;
 }
 
 .SelecioneCon {
-    text-align: center;
-    padding-bottom: 20px;
+    padding: 10px;
+    margin-right: 15px;
+    text-align: left;
 }
 
 textarea {
     width: 330px;
     height: 198px;
-    margin-left: 10px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.90);
 }
@@ -338,7 +351,7 @@ textarea {
 
 /* Menu Sobre Start */
 .BackgroundSobre {
-    background-image: url(../Imagens/Outro\ relogio.jpg);
+    background-image: url(../Imagens/Fundo\ Sobre.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -346,7 +359,7 @@ textarea {
 }
 
 .MainSobre {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.950);
     width: 90%;
     max-width: 760px;
     margin: 70px auto;
@@ -371,6 +384,12 @@ textarea {
     font-size: 17px;
     line-height: 1.7;
     margin-bottom: 18px;
+}
+
+.MainSobre img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Menu Sobre End */
