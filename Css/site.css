@@ -4,7 +4,6 @@
 }
 
 /* Geral */
-
 footer {
     margin-top: 40px;
     padding: 20px 0;
@@ -26,11 +25,9 @@ body {
 .Menu li:hover {
     transform: scale(1.05);
 }
-
 /* Geral End */
 
 /* Home Start */
-
 header {
     background-color: rgba(0, 0, 0, 0.945);
     display: grid;
@@ -110,124 +107,164 @@ header nav {
     color: #A6A6A6;
     text-shadow: 0 0 5px #c9c7c7a2, 0 0 10px #c9c7c7a2, 0 0 20px #c9c7c7a2, 0 0 30px #c9c7c7a2;
 }
-
-
 /* Home End */
 
-/* Menu Entre Start*/
-.Background {
-    background-image: url("../Imagens/Fundo Entrar.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.Background main {
-    background-color: transparent;
-}
-
-.EntreMain {
+/* Aba Index Start*/
+.DestaquesDaSemana {
     display: flex;
-    justify-content: space-around;
-}
-
-.EntreMain form {
-    display: flex;
-    flex-direction: column;
-}
-
-.EntreMain form > div {
-    width: 100%;
-}
-
-.EntreMain form > div:not(.BotoesForm) {
-    margin-bottom: 14px;
-}
-
-.EntreMain section {
-    background-color: rgba(0, 0, 0, 0.589);
-    width: 350px;
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    color: white;
-}
-
-.EntreMain img {
-    width: 300px;
-    height: 200px;
-    display: block;
-    margin: 0 auto;
-}
-
-label {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input {
-    border: none;
-    font-size: 16px;
-    width: 100%;
-}
-
-.BotoesForm {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px 20px 50px;
+    background-color: #f7f7f7;
+    border-radius: 14px;
 }
 
-.EntreMain input {
-    box-sizing: border-box;
-    margin-bottom: 0;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    padding: 10px;
-    color: #fff;
-    outline: none;
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4b4c4c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-.BotoesForm input {
-    width: 50%;
+.botao:hover {
+    color: #A6A6A6;
+    text-shadow: 0 0 5px #c9c7c7a2, 0 0 10px #c9c7c7a2, 0 0 20px #c9c7c7a2, 0 0 30px #c9c7c7a2;
+    transform: scale(1.05);
     cursor: pointer;
 }
 
-.BotoesForm input:hover {
-    transform: scale(1.05);
-    transition: 0.5s;
+.DestaquesDaSemana > div:first-child {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
-.FooterEntre {
-    background-color: rgba(0, 0, 0, 0.945);
-    margin-top: auto;
+.DestaquesDaSemana h1 {
+    margin: 0 0 10px;
+    width: 100%;
     text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.DestaquesDaSemana .Destaque1,
+.DestaquesDaSemana .Destaque2,
+.DestaquesDaSemana .Destaque3,
+.DestaquesDaSemana .Destaque4 {
+    margin: 0;
+}
+
+.DestaquesDaSemana > .botao {
+    flex: 0 0 auto;
+    width: auto;
+    text-align: center;
+    display: inline-block;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.DestaquesDaSemana h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+    white-space: nowrap;
+}
+
+.DestaquesDaSemana p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Destaque1, .Destaque2, .Destaque3, .Destaque4 {
+    list-style: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    background-color: white;
+}
+
+.Destaque1 img, .Destaque2 img, .Destaque3 img, .Destaque4 img {
+    width: 200px;
+    height: 200px;
+}
+
+.BotaoProdutos {
+    display: block;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.BotaoProdutos:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    color: #A6A6A6;
+}
+/* Aba Index End */
+
+/* Menu Sobre Start */
+.BackgroundSobre {
+    background-image: url(../Imagens/Fundo\ Sobre.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
 }
 
-.FooterEntre a {
-    color: white;
-    text-decoration: none;
+.MainSobre {
+    background-color: rgba(0, 0, 0, 0.950);
+    width: 90%;
+    max-width: 760px;
+    margin: 70px auto;
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+    color: aliceblue;
+    flex: 1;
 }
 
-.FooterEntre a:hover {
-    color: #A6A6A6;
-    text-shadow: 0 0 5px #c9c7c7a2, 0 0 10px #c9c7c7a2, 0 0 20px #c9c7c7a2, 0 0 30px #c9c7c7a2;
+.MainSobre h1 {
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: aliceblue;
 }
 
-.FooterEntre p {
-    font-size: 14px;
-    color: white;
+.FonteSobrePalavra,
+.FonteRelogiosPalavra {
+    font-family: 'Playfair Display', serif;
 }
-/* Menu Entre End */
+
+.MainSobre p {
+    text-align: justify;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.MainSobre img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+/* Menu Sobre End */
 
 /* Produtos Start */
-
 main {
     background-color: whitesmoke;
 }
@@ -243,8 +280,10 @@ main {
 }
 
 .CardProd {
+    display: block;
     text-decoration: none;
     color: black;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .CardProd:hover {
@@ -377,158 +416,114 @@ textarea {
 }
 /* Menu Contato End */
 
-/* Menu Sobre Start */
-.BackgroundSobre {
-    background-image: url(../Imagens/Fundo\ Sobre.png);
+/* Menu Entre Start*/
+.Background {
+    background-image: url("../Imagens/Fundo Entrar.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.Background main {
+    background-color: transparent;
+}
+
+.EntreMain {
+    display: flex;
+    justify-content: space-around;
+}
+
+.EntreMain form {
+    display: flex;
+    flex-direction: column;
+}
+
+.EntreMain form > div {
     width: 100%;
 }
 
-.MainSobre {
-    background-color: rgba(0, 0, 0, 0.950);
-    width: 90%;
-    max-width: 760px;
-    margin: 70px auto;
-    padding: 28px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.35);
-    color: aliceblue;
-    flex: 1;
+.EntreMain form > div:not(.BotoesForm) {
+    margin-bottom: 14px;
 }
 
-.MainSobre h1 {
-    text-align: center;
-    margin: 0 0 20px;
-    font-size: 30px;
-    letter-spacing: 1px;
-    color: aliceblue;
+.EntreMain section {
+    background-color: rgba(0, 0, 0, 0.589);
+    width: 350px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    color: white;
 }
 
-.FonteSobrePalavra,
-.FonteRelogiosPalavra {
-    font-family: 'Playfair Display', serif;
-}
-
-.MainSobre p {
-    text-align: justify;
-    font-size: 17px;
-    line-height: 1.7;
-    margin-bottom: 18px;
-}
-
-.MainSobre img {
-    width: 200px;
+.EntreMain img {
+    width: 300px;
+    height: 200px;
     display: block;
     margin: 0 auto;
 }
 
-/* Menu Sobre End */
-
-/* Aba Index Start*/
-
-.DestaquesDaSemana {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 30px 20px 50px;
-    background-color: #f7f7f7;
-    border-radius: 14px;
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-.botao {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4b4c4c;
+input {
+    border: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.BotoesForm {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+
+.EntreMain input {
+    box-sizing: border-box;
+    margin-bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    outline: none;
+}
+
+.BotoesForm input {
+    width: 50%;
+    cursor: pointer;
+}
+
+.BotoesForm input:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.FooterEntre {
+    background-color: rgba(0, 0, 0, 0.945);
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.FooterEntre a {
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
 }
 
-.botao:hover {
-    color: #A6A6A6;
-    text-shadow: 0 0 5px #c9c7c7a2, 0 0 10px #c9c7c7a2, 0 0 20px #c9c7c7a2, 0 0 30px #c9c7c7a2;
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
-.DestaquesDaSemana > div:first-child {
-    flex: 0 0 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-.DestaquesDaSemana h1 {
-    margin: 0 0 10px;
-    width: 100%;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-}
-
-.DestaquesDaSemana .Destaque1,
-.DestaquesDaSemana .Destaque2,
-.DestaquesDaSemana .Destaque3,
-.DestaquesDaSemana .Destaque4 {
-    margin: 0;
-}
-
-.DestaquesDaSemana > .botao {
-    flex: 0 0 auto;
-    width: auto;
-    text-align: center;
-    display: inline-block;
-    align-self: center;
-    margin-top: 10px;
-}
-
-.DestaquesDaSemana h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 15px;
-    font-weight: 400;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: 40px;
-    white-space: nowrap;
-}
-
-.DestaquesDaSemana p {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.Destaque1, .Destaque2, .Destaque3, .Destaque4 {
-    list-style: none;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    width: 250px;
-    text-align: center;
-    background-color: white;
-}
-
-.Destaque1 img, .Destaque2 img, .Destaque3 img, .Destaque4 img {
-    width: 200px;
-    height: 200px;
-}
-
-.BotaoProdutos {
-    text-decoration: none;
-    color: black;
-}
-
-.BotaoProdutos:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+.FooterEntre a:hover {
     color: #A6A6A6;
     text-shadow: 0 0 5px #c9c7c7a2, 0 0 10px #c9c7c7a2, 0 0 20px #c9c7c7a2, 0 0 30px #c9c7c7a2;
 }
-/* Aba Index End */
+
+.FooterEntre p {
+    font-size: 14px;
+    color: white;
+}
+/* Menu Entre End */
