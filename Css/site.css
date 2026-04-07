@@ -134,8 +134,7 @@ header nav {
 }
 
 .botao:hover {
-    color: #A6A6A6;
-    text-shadow: 0 0 5px #c9c7c7a2, 0 0 10px #c9c7c7a2, 0 0 20px #c9c7c7a2, 0 0 30px #c9c7c7a2;
+    color: white;
     transform: scale(1.05);
     cursor: pointer;
 }
